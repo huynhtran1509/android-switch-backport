@@ -23,7 +23,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <string name="switch_on">ON</string>
-    <string name="switch_off">OFF</string>
-</resources>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ics_switch_bg_disabled_holo_light" android:state_enabled="false"/>
+    <item android:drawable="@drawable/ics_switch_bg_focused_holo_light" android:state_focused="true"/>
+    <item android:drawable="@drawable/ics_switch_bg_holo_light"/>
+
+</selector>

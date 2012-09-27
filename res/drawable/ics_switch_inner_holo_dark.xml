@@ -23,7 +23,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <string name="switch_on">ON</string>
-    <string name="switch_off">OFF</string>
-</resources>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ics_switch_thumb_disabled_holo_dark" android:state_enabled="false"/>
+    <item android:drawable="@drawable/ics_switch_thumb_pressed_holo_dark" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ics_switch_thumb_activated_holo_dark" android:state_checked="true"/>
+    <item android:drawable="@drawable/ics_switch_thumb_holo_dark"/>
+
+</selector>
